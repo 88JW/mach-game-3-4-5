@@ -1,0 +1,41 @@
+.tile {
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile.selected {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px white;
+}
+
+.tile.red {
+  background-color: #FF5252;
+}
+
+.tile.blue {
+  background-color: #448AFF;
+}
+
+.tile.green {
+  background-color: #4CAF50;
+}
+
+.tile.yellow {
+  background-color: #FFEB3B;
+}
+
+.tile.purple {
+  background-color: #9C27B0;
+}
+
+.tile.orange {
+  background-color: #FF9800;
+}

@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Game from './components/Game'
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import Game from './components/Game/Game';
+import './App.css';
 
 function App() {
   return (
-    <div className="app-container">
-      <h1>Mash 3-4-5 v2</h1>
-      <Game />
-    </div>
-  )
+    <Provider store={store}>
+      <div className="App">
+        <h1>Match-3 Game</h1>
+        <Game />
+      </div>
+    </Provider>
+  );
 }
 
-export default App
+export default App;
